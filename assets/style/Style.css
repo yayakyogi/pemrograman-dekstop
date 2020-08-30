@@ -1,0 +1,45 @@
+.jarak-atas{
+    padding-top: 60px;
+}
+.wrapper{
+    width:850px;
+    margin: 0 auto;
+}
+.judul{
+    color: aqua;
+}
+.isi{
+    padding-top: 55px;
+}
+.isi-materi{
+    text-align: justify;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14pt;
+}
+.list{
+    margin-left: -15px;
+}
+.img{
+    border-radius: 10px;
+}
+#jumbotron-materi{
+    background: linear-gradient(30deg,#3a7bd5,#00d2ff);
+    box-shadow: -1px -1px 5px gray;
+}
+#close-about{
+    color: white;font-weight: bold; position: absolute; right: 20px; bottom:10px;
+}
+#close-contact{
+    color: white;font-weight: bold; position: absolute; right: 20px; bottom:10px;
+}
+@media only screen and (max-width:720px){
+    .wrapper{
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .isi-materi{
+        font-size: 12pt;
+    }
+}

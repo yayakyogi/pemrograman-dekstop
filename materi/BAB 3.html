@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<head>
+    <!-- Tag meta untuk menentukan karakter encoding yang digunakan, biasanya UTF-8-->
+    <meta charset="utf-8">
+    <!-- Tag meta agar kompatibel dengan Internet Explorer-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Judul Web-->
+    <title>Pemrograman Dekstop</title>
+    <!-- Tag meta untuk melakukan skala secara responsif terhadap viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Memanggil file css-->
+    <link rel="stylesheet" type="text/css" href="../assets/style/Style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap-4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/fontawesome-free/css/all.min.css">
+    <script type="text/javascript" src="../assets/bootstrap-4.5.0/js/jquery.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap-4.5.0/js/popper.js"></script>
+    <script type="text/javascript" src="../assets/bootstrap-4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #e9ecef;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logoutama.png" width="30" height="30" alt="GinantakaCode">
+                <b>GINANTAKA</b> CODE
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target=".modalAbout" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target=".modalContact" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target=".modalProfil" href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <p class="jarak-atas"></p>
+    <!-- Wrapper -->
+    <div class="wrapper">
+        
+        <!--breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-dark">
+                <li class="breadcrumb-item" style="font-weight:500;"><a style="color:white;" href="../index.html">Home</a></li>
+                <li class="breadcrumb-item" style="font-weight:500;"><a style="color:white;" href="index.html">Materi</a></li>
+                <li class="breadcrumb-item active" aria-current="page" style="font-weight:500;">Mengambil nilai dari Textbox</li>
+            </ol>
+        </nav>
+
+        <!-- Materi -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <h2>Pemrograman Dekstop</h2>
+                        <h5>Bab 3 Mengambil nilai dari Textbox</h5><br>
+                        <center><img class="img-fluid img-thumbnail" src="../assets/img/materi3.png" alt="bab 3">
+                        <br><br>
+                        <p class="isi-materi">
+                            Setelah pada pertemuan sebelumnya kita telah mempelajari tentang cara <a href="BAB 2.html"> Menampilkan tulisan di dalam textbox</a>, 
+                            pada bab ini akan dijelaskan bagaimana caranya agar kita bisa mengambil nilai dari suatu textbox. Contohnya seperti saat kita membuat aplikasi pendaftaran, tentunya 
+                            kita harus menyimpan apa yang di inputkan oleh user ke dalam sebuah variabel agar data yang di inputkan tadi bisa diolah sesuai kebutuhan seperti dimasukkan ke dalam database 
+                            atau yang lainnya.
+                        </p>
+                        <p class="isi-materi">
+                            Baik selanjutnya mari kita coba buat project baru di <b>SharpDevelop</b> dengan nama latihan 2. Untuk yang belum paham cara membuat project di SharpDevelop silahkan baca materi 
+                            yang sudah diajarkan sebelumnya di <a href="BAB 1.html">Pengenalan IDE SharpDevelop</a>.
+                        </p>
+                        <br>
+                        <ol class="list">
+                            <li>
+                                <p class="isi-materi">
+                                    Langkah pertama adalah buat form seperti di bawah ini
+                                </p>
+                                <img class="img-fluid img-thumbnail" src="../assets/img/img-bab3/bab3-img1.png" alt="Bab 3 Img 1">
+                            </li>
+                            <br><br>
+                            <li>
+                                <p class="isi-materi">
+                                    Kemudian double klik button dan akan masuk ke bagian coding, setelah itu coba isi fungsi button dengan coding dibawah ini
+                                </p>
+                                <img src="../assets/img/img-bab3/bab3-img2.png" alt="Bab 3 Img 2"><br>
+                                <p class="isi-materi">
+                                    <b>Penjelasan</b>
+                                    <ul>
+                                        <li><p class="isi-materi">Pertama kita buat variabel <b>String tambah</b> yang berisi <i>Nama saya adalah</p></i>
+                                        <li><p class="isi-materi">Kemudian buat variabel <b>String input</b> untuk menerima inputan dari textbox. Untuk <i>inputbox</i> adalah nama variabel dari textbox silahkan ubah di properties</p></li>
+                                        <li><p class="isi-materi">Yang selanjutnya kita buat variabel baru yaitu <b>String output</b> untuk menggabungkan variabel tambah dan juga input</p></li>
+                                        <li><p class="isi-materi">Kemudian yang terakhir adalah menampilkan apa yang telah kita inputkan tadi kedalam textbox. Outputbox merupakan nama variabel dari textbox yang akan digunakan untuk menampilkan data</p></li>
+                                    </ul>
+                                </p>
+                                <p class="isi-materi">Setelah selesai coba run dan isikan sebuah nama didalam texbox input kemudian klik proses, apabila coding benar akan menjadi aplikasi seperti dibawah ini</p>
+                                <img class="img-fluid img-thumbnail" src="../assets/img/img-bab3/bab3-img3.png" alt="Bab 3 Img 3">
+                            </li>
+                            <br><br>
+                            <li>
+                                <p class="isi-materi">
+                                    Cara diatas hanya bisa digunakan untuk tipe data String, untuk tipe data Integer,Float dan Double kita perlu mengconvert terlebih dahulu tipe data nya dari string ke tipe data yang diinginkan. 
+                                    Contohnya seperti dibawah ini
+                                </p>
+                                <img class="img-fluid img-thumbnail" src="../assets/img/img-bab3/bab3-img4.png" alt="Bab 3 Img 4">
+                                <p class="isi-materi">
+                                    Jadi setelah membuat variabel kita tuliskan lagi tipe datanya, kemudian tambahkan <b>.Parse</b> dibelakangnya yang berfungsi untuk mengubah inputan dari <i>Inputbox.Text</i> yang awalnya bertipe data String diubah ke dalam Integer,Float atau Double.
+                                </p>
+                            </li>
+                        </ol><br>
+                    </div><!-- ./card-body -->
+ 
+                    <div class="card-footer">
+                        <h4>Latihan</h4>
+                        <p class="isi-materi">
+                            Untuk lebih memahami materi yang telah disampaikan coba kalian buat desain form baru lalu coding dan hasil outputnya adalah sebagai berikut.
+                        </p>
+                        <center>
+                        <img class="img-fluid img-thumbnail" src="../assets/img/img-bab3/bab3-img5.png" alt="Bab 3 Img 5">
+                        </center>
+                        <p class="isi-materi">
+                            <br>Sekian penjelasan dari saya tentang cara <a href="BAB 3.html"> Mengambil nilai dari textbox</a> dan untuk materi yang lainya bisa 
+                            diakses di link dibawah.
+                        </p>
+                        <center><p>Terimakasih :)</p></center>
+                    </div><!-- ./card footer -->
+ 
+                </div><!-- ./card -->
+ 
+            </div><!-- ./Col -->
+
+            <!-- List -->
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="card bg-light mb-3">
+                    <div class="card-header">Pemrograman Dekstop</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Daftar Materi</h5>
+                        <div class="list-group">
+                            <a class="list-group-item list-group-item-action list-group-item-primary" href="BAB 1.html">Bab 1 Pengenalan IDE SharpDevelop</a>
+                            <a class="list-group-item list-group-item-action list-group-item-info" href="BAB 2.html">Bab 2 Menampilkan Tulisan di Textbox</a>
+                            <a class="list-group-item list-group-item-action list-group-item-primary" href="BAB 3.html">Bab 3 Mengambil Text dari Textbox</a>
+                            <a class="list-group-item list-group-item-action list-group-item-info" href="BAB 4.html">Bab 4 Menggunakan ComboBox</a>
+                            <a class="list-group-item list-group-item-action list-group-item-primary" href="BAB 5.html">Bab 5 Menggunakan Listbox</a>
+                            <a class="list-group-item list-group-item-action list-group-item-info" href="BAB 6.html">Bab 6 Menggunakan RadioButton</a>
+                            <a class="list-group-item list-group-item-action list-group-item-primary" href="BAB 7.html">Bab 7 Menggunakan Treview</a>
+                            <a class="list-group-item list-group-item-action list-group-item-info" href="BAB 8.html">Bab 8 Mengkoneksikan Database MySql</a>
+                            <a class="list-group-item list-group-item-action list-group-item-primary" href="BAB 9.html">Project Akhir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div><!-- row -->
+
+    </div> <!-- Wrapper -->
+
+   <!-- Footer -->
+   <center><a class="btn btn-primary btn-md" style="color:white;" id="back">Back to top</a></center><br>
+   <bockquote class="blockquote text-center">
+       <p class="lead" style="font-size:13pt;">&copy; 2020 Ginantaka Code - Pemrograman Dekstop</p>
+   </blockqoute>
+
+   <!-- Modal -->
+   <div class="modal fade modalAbout" tabindex="-1" role="dialog" aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h2>About</h2>
+               </div>
+               <div class="modal-body">
+                   <div class="row">
+                       <div class="col-md-12 col-sm-12 col-xs-12">
+                           <p class="lead" style="text-align:justify;">
+                               WEB ini dibangun dengan tujuan untuk digunakan sebagai media pembelajaran <b>Pemrograman Dekstop</b>.
+                               Didalam pembelajaran nanti akan dijelaskan apa saja yang perlu diperhatikan dalam membuat suatu aplikasi berbasis dekstop, 
+                               mulai dari dasar penggunaan Text Editor, aplikasi tambahan seperti .NET Framework sampai dengan tools yang dibutuhkan untuk membuat suatu aplikasi berbasis Dekstop.
+                           </p>
+                           <p class="lead" style="text-align:justify;">Tujuan akhir dari pembelajaran ini adalah agar siswa bisa mengetahui cara membuat aplikasi dekstop (GUI) dengan cara-cara yang sudah dijelaskan 
+                               di pembelajaran ini, dan dipilihya media pembelajaran berbasis WEB ini adalah agar siswa bisa mengakses semua materi kapanpun, baik melalui laptop ataupun melalui smartphone masing-masing
+                           </p>
+                       </div>
+                   </div>
+               </div>
+               <div class="modal-footer">
+                   <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Close</button>
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   <!-- Modal Contact -->
+   <div class="modal fade modalContact" tabindex="-1" role="dialog" aria-hidden="true">
+       <div class="modal-dialog modal-md">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h2>Contact</h2>
+               </div>
+               <div class="modal-body">
+                   <div class="row">
+                       <div class="col-md-12 col-sm-12">
+                       <center>
+                           <p class="fa fa-id-card"> Author : Yayak Yogi Ginantaka</p><br>
+                           <p class="fa fa-address-book"> WhatsApp : 082233863080</p><br>
+                           <p class="fa fa-envelope"> Email : yayaktaka@gmail.com</p><br>
+                       </center>
+                       </div>
+                   </div>
+               </div>
+               <div class="modal-footer">
+                   <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Close</button>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Modal Profil -->
+   <div class="modal fade modalProfil" tabindex="-1" role="dialog" aria-hidden="true">
+       <div class="modal-dialog modal-xl">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h2>Profile</h2>
+               </div>
+               <div class="modal-body">
+                   <div class="row">
+                       <div class="col-md-4 col-sm-12 col-xs-4">
+                           <img src="../assets/img/profil.jpg" class="img img-fluid" alt="profil">
+                       </div>
+                       <div class=" col-md-8 col-sm-12 col-xs-8">
+                           <br>
+                           <h4 style="text-align:left">About Me</h4>
+                           <p class="lead" style="text-align:justify;">
+                               Assalamualaikum Wr Wb, perkenalkan nama saya <b>Yayak Yogi Ginantaka</b> saya masih berstatus sebagai mahasiswa Universitas Bhineka PGRI Tulungagung 
+                               dengan jurusan Pendidikan Teknologi Informasi. Ini merupakan project pertama saya dalam pemroraman web sebelumnya saya juga pernah mengerjakan beberapa project 
+                               menggunakan bahasa C dan C++, namun kali ini saya mencoba sesuatu yang baru yaitu membuat media pembelajaran berbasis WEB menggunakan HTML dan Bootstrap sebagai designnya.
+                           </p>
+                       </div>
+                   </div>
+               </div>
+               <div class="modal-footer">
+                   <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Close</button>
+               </div>
+           </div>
+       </div>
+   </div>
+</body>
+</htmL>
+<!-- Jquery -->
+<script type="text/javascript" src="../assets/style/style.js"></script>

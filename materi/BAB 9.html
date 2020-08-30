@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <!-- Tag meta untuk menentukan karakter encoding yang digunakan, biasanya UTF-8-->
+   <meta charset="utf-8">
+   <!-- Tag meta agar kompatibel dengan Internet Explorer-->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Judul Web-->
+   <title>Pemrograman Dekstop</title>
+   <!-- Tag meta untuk melakukan skala secara responsif terhadap viewport-->
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <!-- Memanggil file css-->
+   <link rel="stylesheet" type="text/css" href="../assets/style/Style.css">
+   <link rel="stylesheet" type="text/css" href="../assets/bootstrap-4.5.0/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="../assets/fontawesome-free/css/all.min.css">
+   <script type="text/javascript" src="../assets/bootstrap-4.5.0/js/jquery.js"></script>
+   <script type="text/javascript" src="../assets/bootstrap-4.5.0/js/popper.js"></script>
+   <script type="text/javascript" src="../assets/bootstrap-4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #e9ecef;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logoutama.png" width="30" height="30" alt="GinantakaCode">
+                <b>GINANTAKA</b> CODE
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target=".modalAbout" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target=".modalContact" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target=".modalProfil" href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <p style="padding-top:70px;"></p>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="jumbotron bg-dark">
+                    <center style="color:white;">
+                        <h1>Project Akhir</h1><br><br>
+                        <p class="lead">Siswa diharuskan membuat suatu project aplikasi dan dipresentasikan di depan guru pada saat ujian baik UTS maupun UAS</p> 
+                        <p class="lead">Untuk melihat rule dari tugas ini silahkan unduh rulenya dengan cara klik tombol dibawah ini</p>
+                        <br><br>
+                        <a class="btn btn-success btn-lg" href="../assets/Modul Pemrograman Dekstop/UTS Pemrograman Dekstop.pdf">UTS</a>
+                        <a class="btn btn-success btn-lg" href="../assets/Modul Pemrograman Dekstop/UAS Pemrograman Dekstop.pdf">UAS</a>
+                    </center>
+                </div> <!-- ./jumbotron -->
+            </div> <!-- ./col -->
+        </div> <!-- ./row -->
+    </div><!-- ./container -->
+
+    <!-- Footer -->
+    <br><br><br>
+    <bockquote class="blockquote text-center">
+        <p class="lead" style="font-size:13pt;">&copy; 2020 Ginantaka Code - Pemrograman Dekstop</p>
+    </blockqoute>
+
+    <!-- Modal-->
+    <div class="modal fade modalAbout" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>About</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <p class="lead" style="text-align:justify;">
+                                WEB ini dibangun dengan tujuan untuk digunakan sebagai media pembelajaran <b>Pemrograman Dekstop</b>.
+                                Didalam pembelajaran nanti akan dijelaskan apa saja yang perlu diperhatikan dalam membuat suatu aplikasi berbasis dekstop, 
+                                mulai dari dasar penggunaan Text Editor, aplikasi tambahan seperti .NET Framework sampai dengan tools yang dibutuhkan untuk membuat suatu aplikasi berbasis Dekstop.
+                            </p>
+                            <p class="lead" style="text-align:justify;">Tujuan akhir dari pembelajaran ini adalah agar siswa bisa mengetahui cara membuat aplikasi dekstop (GUI) dengan cara-cara yang sudah dijelaskan 
+                                di pembelajaran ini, dan dipilihya media pembelajaran berbasis WEB ini adalah agar siswa bisa mengakses semua materi kapanpun, baik melalui laptop ataupun melalui smartphone masing-masing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Contact -->
+    <div class="modal fade modalContact" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Contact</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                        <center>
+                            <p class="fa fa-id-card"> Author : Yayak Yogi Ginantaka</p><br>
+                            <p class="fa fa-address-book"> WhatsApp : 082233863080</p><br>
+                            <p class="fa fa-envelope"> Email : yayaktaka@gmail.com</p><br>
+                        </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Modal Profil -->
+    <div class="modal fade modalProfil" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Profile</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-xs-4">
+                            <img src="../assets/img/profil.jpg" class="img img-fluid" alt="profil">
+                        </div>
+                        <div class=" col-md-8 col-sm-12 col-xs-8">
+                            <br>
+                            <h4 style="text-align:left">About Me</h4>
+                            <p class="lead" style="text-align:justify;">
+                                Assalamualaikum Wr Wb, perkenalkan nama saya <b>Yayak Yogi Ginantaka</b> saya masih berstatus sebagai mahasiswa Universitas Bhineka PGRI Tulungagung 
+                                dengan jurusan Pendidikan Teknologi Informasi. Ini merupakan project pertama saya dalam pemroraman web sebelumnya saya juga pernah mengerjakan beberapa project 
+                                menggunakan bahasa C dan C++, namun kali ini saya mencoba sesuatu yang baru yaitu membuat media pembelajaran berbasis WEB menggunakan HTML dan Bootstrap sebagai designnya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-md" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- Jquery -->
+<script type="text/javascript" src="../assets/style/style.js"></script>
